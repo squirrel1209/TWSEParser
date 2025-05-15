@@ -24,7 +24,7 @@ file(GLOB_RECURSE SOURCES
     src/main.cpp
     src/controller/TWSEApp.cpp
     src/controller/TWSEPacketParser.cpp
-    src/controller/TWSEDatabase.cpp
+    src/storage/TWSEDatabase.cpp
     src/base/TWSEParserFactory.cpp
     src/common/EncodingUtils.cpp
     src/format1/TWSEFormat1.cpp
@@ -62,6 +62,14 @@ file(GLOB_RECURSE TEST_SOURCES
 )
 
 add_executable(TWSETests ${TEST_SOURCES})
+
+# ✅ 加入被測試的核心元件（Format1）
+target_sources(TWSETests
+    PRIVATE
+    src/format1/TWSEFormat1.cpp
+    src/format1/TWSEFormat1Parser.cpp
+)
+
 target_link_libraries(TWSETests gtest gtest_main)
 
 add_test(NAME AllTests COMMAND TWSETests)

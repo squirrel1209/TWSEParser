@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format6/TWSEFormat6.cpp" "CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6.cpp.obj" "gcc" "CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6.cpp.obj.d"
   "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format6/TWSEFormat6Parser.cpp" "CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.obj" "gcc" "CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.obj.d"
   "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/main.cpp" "CMakeFiles/TWSEParser.dir/src/main.cpp.obj" "gcc" "CMakeFiles/TWSEParser.dir/src/main.cpp.obj.d"
+  "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/storage/TWSEDatabase.cpp" "CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.obj" "gcc" "CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

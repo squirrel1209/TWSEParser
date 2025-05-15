@@ -34,6 +34,12 @@ public:
     /// 回傳可修改的資料指標
     T* data();
 
+    /// 僅當 T 為 char 時，將內容轉成 std::string（最多長度 N）
+    std::string toString() const {
+        static_assert(std::is_same<T, char>::value, "toString() only available for FixedArray<char, N>");
+        return std::string(arr, strnlen(arr, N));
+    }
+
     /// 回傳唯讀的資料指標
     const T* data() const;
 };

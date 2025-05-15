@@ -57,7 +57,7 @@ struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
     TWSEFormat6Body body;         // 19 bytes：封包主體資訊
 
     // ✅ 封包驗證函式（實作請見 TWSEFormat6.cpp）
-    
+
     /// 驗證 XOR 是否正確（從 messageLength ~ cumulativeVolume 為止）
     bool checkXor() const override;
 

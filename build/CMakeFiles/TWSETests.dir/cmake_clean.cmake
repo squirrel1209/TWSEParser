@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj"
+  "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj.d"
+  "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj"
+  "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj.d"
   "CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj"
   "CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj.d"
   "TWSETests.exe"

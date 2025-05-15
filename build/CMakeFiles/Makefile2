@@ -156,12 +156,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/TWSEParser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target TWSEParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target TWSEParser"
 .PHONY : CMakeFiles/TWSEParser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TWSEParser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TWSEParser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 0
 .PHONY : CMakeFiles/TWSEParser.dir/rule
@@ -173,7 +173,7 @@ TWSEParser: CMakeFiles/TWSEParser.dir/rule
 # codegen rule for target.
 CMakeFiles/TWSEParser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target TWSEParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target TWSEParser"
 .PHONY : CMakeFiles/TWSEParser.dir/codegen
 
 # clean rule for target.
@@ -189,12 +189,12 @@ CMakeFiles/TWSETests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest
 CMakeFiles/TWSETests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=11,12 "Built target TWSETests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=12,13,14,15 "Built target TWSETests"
 .PHONY : CMakeFiles/TWSETests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TWSETests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TWSETests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles 0
 .PHONY : CMakeFiles/TWSETests.dir/rule
@@ -206,7 +206,7 @@ TWSETests: CMakeFiles/TWSETests.dir/rule
 # codegen rule for target.
 CMakeFiles/TWSETests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=11,12 "Finished codegen for target TWSETests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=12,13,14,15 "Finished codegen for target TWSETests"
 .PHONY : CMakeFiles/TWSETests.dir/codegen
 
 # clean rule for target.
@@ -221,7 +221,7 @@ CMakeFiles/TWSETests.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=13,14 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=16,17 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -238,7 +238,7 @@ gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=13,14 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=16,17 "Finished codegen for target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -254,7 +254,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=15,16 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=18,19 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +271,7 @@ gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=15,16 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=18,19 "Finished codegen for target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -286,7 +286,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=17,18 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=20,21 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -303,7 +303,7 @@ gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=17,18 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=20,21 "Finished codegen for target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -318,7 +318,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=19,20 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=22,23 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +335,7 @@ gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=19,20 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=22,23 "Finished codegen for target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.

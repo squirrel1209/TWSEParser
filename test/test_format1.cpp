@@ -12,14 +12,15 @@ TWSEStockBasicInfoFormat1 createValidPacket() {
     packet.escCode[0] = 0x1B;
 
     // 設定 Header 資訊
-    packet.header.messageLength = BCD2{0x01, 0x14}; // 0x0114 → 114
-    packet.header.businessCode = BCD1{0x01};
-    packet.header.formatCode   = BCD1{0x01};
-    packet.header.versionCode  = BCD1{0x09};
-    packet.header.sequenceNumber = BCD4{0x00, 0x00, 0x00, 0x01};
+    packet.header.messageLength  = BCD2{FixedArray<uint8_t, 2>{0x01, 0x14}};
+    packet.header.businessCode   = BCD1{FixedArray<uint8_t, 1>{0x01}};
+    packet.header.formatCode     = BCD1{FixedArray<uint8_t, 1>{0x01}};
+    packet.header.versionCode    = BCD1{FixedArray<uint8_t, 1>{0x09}};
+    packet.header.sequenceNumber = BCD4{FixedArray<uint8_t, 4>{0x00, 0x00, 0x00, 0x01}};
+
 
     // 股票代號 "1101" + 2 個空白（共 6 字元）
-    std::memcpy(packet.stockInfo.stockCode.data, "1101  ", 6);
+    std::memcpy(packet.stockInfo.stockCode.data(), "1101  ", 6);
 
     // 其他欄位留空或補 0，視結構預設而定（已由 constructor 清 0）
 

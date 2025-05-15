@@ -34,11 +34,13 @@ void TWSEPacketParser::parseAll() {
             std::cout << "✅ Format " << parser->getFormatName()
                       << " 解析成功, Offset: " << offset
                       << ", 長度: " << len << "\n";
-        } else {
+        } // end if
+        
+        else {
             std::cout << "❌ 解析失敗, Offset: " << offset
                       << ", FormatCode: 0x" << std::hex << std::setw(2)
                       << std::setfill('0') << static_cast<int>(formatCode) << std::dec << "\n";
-        }
+        } // end else
 
         offset += len;
     }

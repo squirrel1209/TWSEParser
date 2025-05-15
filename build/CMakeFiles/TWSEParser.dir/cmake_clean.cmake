@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.obj.d"
   "CMakeFiles/TWSEParser.dir/src/main.cpp.obj"
   "CMakeFiles/TWSEParser.dir/src/main.cpp.obj.d"
+  "CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.obj"
+  "CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.obj.d"
   "TWSEParser.exe"
   "TWSEParser.exe.manifest"
   "TWSEParser.pdb"

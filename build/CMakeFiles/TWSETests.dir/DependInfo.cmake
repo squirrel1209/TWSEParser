@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format1/TWSEFormat1.cpp" "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj" "gcc" "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj.d"
+  "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format1/TWSEFormat1Parser.cpp" "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj" "gcc" "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj.d"
   "C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/test/test_format1.cpp" "CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj" "gcc" "CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj.d"
   )
 

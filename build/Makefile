@@ -350,6 +350,7 @@ src/format1/TWSEFormat1.obj: src/format1/TWSEFormat1.cpp.obj
 # target to build an object file
 src/format1/TWSEFormat1.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj
 .PHONY : src/format1/TWSEFormat1.cpp.obj
 
 src/format1/TWSEFormat1.i: src/format1/TWSEFormat1.cpp.i
@@ -358,6 +359,7 @@ src/format1/TWSEFormat1.i: src/format1/TWSEFormat1.cpp.i
 # target to preprocess a source file
 src/format1/TWSEFormat1.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.i
 .PHONY : src/format1/TWSEFormat1.cpp.i
 
 src/format1/TWSEFormat1.s: src/format1/TWSEFormat1.cpp.s
@@ -366,6 +368,7 @@ src/format1/TWSEFormat1.s: src/format1/TWSEFormat1.cpp.s
 # target to generate assembly for a file
 src/format1/TWSEFormat1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.s
 .PHONY : src/format1/TWSEFormat1.cpp.s
 
 src/format1/TWSEFormat1Parser.obj: src/format1/TWSEFormat1Parser.cpp.obj
@@ -374,6 +377,7 @@ src/format1/TWSEFormat1Parser.obj: src/format1/TWSEFormat1Parser.cpp.obj
 # target to build an object file
 src/format1/TWSEFormat1Parser.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1Parser.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj
 .PHONY : src/format1/TWSEFormat1Parser.cpp.obj
 
 src/format1/TWSEFormat1Parser.i: src/format1/TWSEFormat1Parser.cpp.i
@@ -382,6 +386,7 @@ src/format1/TWSEFormat1Parser.i: src/format1/TWSEFormat1Parser.cpp.i
 # target to preprocess a source file
 src/format1/TWSEFormat1Parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1Parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.i
 .PHONY : src/format1/TWSEFormat1Parser.cpp.i
 
 src/format1/TWSEFormat1Parser.s: src/format1/TWSEFormat1Parser.cpp.s
@@ -390,6 +395,7 @@ src/format1/TWSEFormat1Parser.s: src/format1/TWSEFormat1Parser.cpp.s
 # target to generate assembly for a file
 src/format1/TWSEFormat1Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format1/TWSEFormat1Parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.s
 .PHONY : src/format1/TWSEFormat1Parser.cpp.s
 
 src/format6/TWSEFormat6.obj: src/format6/TWSEFormat6.cpp.obj
@@ -464,6 +470,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/storage/TWSEDatabase.obj: src/storage/TWSEDatabase.cpp.obj
+.PHONY : src/storage/TWSEDatabase.obj
+
+# target to build an object file
+src/storage/TWSEDatabase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.obj
+.PHONY : src/storage/TWSEDatabase.cpp.obj
+
+src/storage/TWSEDatabase.i: src/storage/TWSEDatabase.cpp.i
+.PHONY : src/storage/TWSEDatabase.i
+
+# target to preprocess a source file
+src/storage/TWSEDatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.i
+.PHONY : src/storage/TWSEDatabase.cpp.i
+
+src/storage/TWSEDatabase.s: src/storage/TWSEDatabase.cpp.s
+.PHONY : src/storage/TWSEDatabase.s
+
+# target to generate assembly for a file
+src/storage/TWSEDatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/storage/TWSEDatabase.cpp.s
+.PHONY : src/storage/TWSEDatabase.cpp.s
+
 test/test_format1.obj: test/test_format1.cpp.obj
 .PHONY : test/test_format1.obj
 
@@ -534,6 +564,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/storage/TWSEDatabase.obj
+	@echo ... src/storage/TWSEDatabase.i
+	@echo ... src/storage/TWSEDatabase.s
 	@echo ... test/test_format1.obj
 	@echo ... test/test_format1.i
 	@echo ... test/test_format1.s

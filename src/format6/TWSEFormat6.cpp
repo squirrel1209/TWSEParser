@@ -60,8 +60,8 @@ bool TWSERealtimeQuoteFormat6Fixed::verifyAll(bool& escOK, bool& termOK, bool& x
 
 /// =======================================
 /// verifySize()
-/// - 檢查固定區段（不含價格）的大小是否為 38 bytes
+/// - 檢查固定區段（不含價格）的大小是否為 29 bytes
 /// =======================================
 bool TWSERealtimeQuoteFormat6Fixed::verifySize() {
-    return sizeof(TWSERealtimeQuoteFormat6Fixed) == 38;
+    return sizeof(TWSERealtimeQuoteFormat6Fixed) == 29;
 }

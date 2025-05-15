@@ -2,6 +2,7 @@
 #pragma once
 #include "result/TWSEParsedFormat1Result.h"
 #include "result/TWSEParsedFormat6Result.h"
+#include "common/FixedString.h"
 #include <unordered_map>
 #include <vector>
 #include <memory>

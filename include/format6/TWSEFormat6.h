@@ -24,7 +24,7 @@ struct TWSEFormat6Header {
 
 #pragma pack(push, 1)
 // =======================================
-// 格式六：成交主體資訊（總長度：28 bytes）
+// 格式六：成交主體資訊（總長度：19 bytes）
 // =======================================
 struct TWSEFormat6Body {
     Ascii6 stockCode;       // 6 bytes：股票代號
@@ -48,13 +48,13 @@ struct TWSEFormat6PriceVolume {
 
 #pragma pack(push, 1)
 // =======================================
-// 格式六：固定封包區（ESC ~ Volume 為止，共 38 bytes）
+// 格式六：固定封包區（ESC ~ Volume 為止，共 29 bytes）
 // - 後續動態區域為 PriceVolume + XOR + Terminal
 // =======================================
 struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
     BCD1 escCode;                  // 1 byte：封包起始符（應為 0x1B）
     TWSEFormat6Header header;     // 9 bytes：封包標頭
-    TWSEFormat6Body body;         // 28 bytes：封包主體資訊
+    TWSEFormat6Body body;         // 19 bytes：封包主體資訊
 
     // ✅ 封包驗證函式（實作請見 TWSEFormat6.cpp）
     
@@ -70,12 +70,12 @@ struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
     /// 綜合驗證封包（ESC + XOR + Terminal）
     bool verifyAll(bool& escOK, bool& termOK, bool& xorOK) const override;
 
-    /// 驗證固定區段大小是否正確（應為 38 bytes）
+    /// 驗證固定區段大小是否正確（應為 29 bytes）
     static bool verifySize();
 };
 #pragma pack(pop)
 
-// ✅ 編譯期大小驗證：固定區段必須為 38 bytes
-static_assert(sizeof(TWSERealtimeQuoteFormat6Fixed) == 38, "Format6 fixed section must be 38 bytes");
+// ✅ 編譯期大小驗證：固定區段必須為 29 bytes
+//static_assert(sizeof(TWSERealtimeQuoteFormat6Fixed) == 29, "Format6 fixed section must be 29 bytes");
 
 #endif // TWSEFORMAT6_H

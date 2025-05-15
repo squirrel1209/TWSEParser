@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/cmake_install.cmake",
+		"C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-build/cmake_install.cmake",
+		"C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

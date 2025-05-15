@@ -1,0 +1,81 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam defaultTextAlignment center
+skinparam packageStyle rectangle
+
+' ===================== 抽象基底層 =====================
+package "base (抽象介面)" {
+    interface TWSEFormatParser {
+        +parse(data, length): bool
+        +getFormatName(): string
+        +getParsedResult(): TWSEParsedResult
+    }
+
+    class TWSEParsedResult {
+    }
+
+    class TWSEParserFactory {
+        +createParser(formatCode): TWSEFormatParser
+    }
+}
+
+' ===================== 格式解析器層 =====================
+package "format1 (格式一)" {
+    class TWSEFormat1Parser
+    class TWSEParsedFormat1Result {
+        +packet: TWSEStockBasicInfoFormat1
+    }
+    class TWSEStockBasicInfoFormat1
+
+    TWSEFormat1Parser ..|> TWSEFormatParser
+    TWSEParsedFormat1Result ..|> TWSEParsedResult
+    TWSEParsedFormat1Result --> TWSEStockBasicInfoFormat1
+}
+
+package "format6 (格式六)" {
+    class TWSEFormat6Parser
+    class TWSEParsedFormat6Result {
+        +fixed: TWSERealtimeQuoteFormat6Fixed
+        +dealPrices: vector<PriceVolume>
+    }
+    class TWSERealtimeQuoteFormat6Fixed
+
+    TWSEFormat6Parser ..|> TWSEFormatParser
+    TWSEParsedFormat6Result ..|> TWSEParsedResult
+    TWSEParsedFormat6Result --> TWSERealtimeQuoteFormat6Fixed
+}
+
+' ===================== 控制與應用層 =====================
+package "controller (流程控制)" {
+    class TWSEPacketParser {
+        +parseAll()
+        +getResults(): vector<TWSEParsedResult>
+    }
+
+    TWSEPacketParser --> TWSEParserFactory
+    TWSEPacketParser --> TWSEFormatParser
+}
+
+package "storage (資料儲存)" {
+    class TWSEDatabase {
+        +stockInfoMap
+        +dealHistory
+        +load(results)
+    }
+
+    TWSEDatabase --> TWSEParsedFormat1Result
+    TWSEDatabase --> TWSEParsedFormat6Result
+}
+
+package "app (應用層)" {
+    class TWSEApp {
+        +run(filename)
+    }
+    class main
+
+    main --> TWSEApp
+    TWSEApp --> TWSEPacketParser
+    TWSEApp --> TWSEDatabase
+}
+@enduml
+

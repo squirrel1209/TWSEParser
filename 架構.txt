@@ -1,0 +1,63 @@
+TWSEPacketParser/
+├── include/                         ← 所有 .h 標頭檔案
+│   ├── base/                        ← 抽象介面與工廠類別
+│   │   ├── TWSEPacketBase.h         ← 封包基底，定義 verifyAll()
+│   │   ├── TWSEFormatParser.h       ← 抽象解析器介面
+│   │   ├── TWSEParsedResult.h       ← 抽象解析結果
+│   │   └── TWSEParserFactory.h      ← 工廠介面：由 formatCode 建立對應解析器
+│
+│   ├── common/                      ← 共用工具（編碼、BCD、固定長度陣列）
+│   │   ├── FixedArray.h             ← 固定長度模板陣列
+│   │   ├── FixedArray.tpp           ← FixedArray 實作（模板類別）
+│   │   ├── TBCD.h                   ← BCD 編碼轉換工具（模板）
+│   │   ├── AsciiUtils.h             ← 文字補空格、轉換等（可擴充）
+│   │   └── EncodingUtils.h          ← BIG5 → UTF8、價格轉換、代碼補齊
+│
+│   ├── format1/                     ← Format1（基本資料格式）相關類別
+│   │   ├── TWSEFormat1.h            ← Format1 封包定義（114 bytes）+ 驗證邏輯
+│   │   └── TWSEFormat1Parser.h      ← 專用解析器宣告（含 validate）
+│
+│   ├── format6/                     ← Format6（撮合價格格式）相關類別
+│   │   ├── TWSEFormat6.h            ← Format6 封包定義（動態筆數）+ 驗證邏輯
+│   │   └── TWSEFormat6Parser.h      ← 專用解析器宣告
+│
+│   ├── result/                      ← 各格式解析結果封裝（OOP 樣式）
+│   │   ├── TWSEParsedFormat1Result.h
+│   │   └── TWSEParsedFormat6Result.h
+│
+│   └── controller/                  ← 控制器與應用層
+│       ├── TWSEPacketParser.h       ← 控制多筆封包分流處理
+│       └── TWSEApp.h                ← 主應用介面（封裝 run 流程）
+│
+├── src/                             ← 所有 .cpp 實作檔案
+│   ├── base/
+│   │   └── TWSEParserFactory.cpp    ← 工廠實作（依 formatCode 建立解析器）
+│
+│   ├── common/
+│   │   └── EncodingUtils.cpp        ← 編碼/價格工具實作（BIG5→UTF8, 補齊等）
+│
+│   ├── format1/
+│   │   ├── TWSEFormat1.cpp          ← 封包驗證函式實作（ESC/XOR/Terminal）
+│   │   └── TWSEFormat1Parser.cpp    ← Format1 專用 parser 實作
+│
+│   ├── format6/
+│   │   ├── TWSEFormat6.cpp          ← 封包驗證函式實作
+│   │   └── TWSEFormat6Parser.cpp    ← Format6 專用 parser 實作
+│
+│   ├── controller/
+│   │   ├── TWSEPacketParser.cpp     ← 多筆封包迴圈解析
+│   │   ├── TWSEApp.cpp              ← 主應用入口封裝
+│   │   └── TWSEDatabase.cpp         ← 資料分類匯入儲存（格式1/6 對應不同欄位）
+│
+│   └── main.cpp                     ← 主程式入口，呼叫 TWSEApp.run()
+│
+├── test/                            ← ✅ 單元測試（建議搭配 GoogleTest）
+│   ├── test_format1.cpp
+│   ├── test_format6.cpp
+│   └── test_parser_factory.cpp
+│
+├── data/                            ← 測試封包資料（可模擬來自 TCP stream）
+│   └── Tse.bin
+│
+├── CMakeLists.txt                   ← CMake 編譯腳本
+└── README.md                        ← 專案說明（建議說明架構、編譯、範例）

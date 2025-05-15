@@ -185,8 +185,8 @@ CMakeFiles/TWSEParser.dir/clean:
 # Target rules for target CMakeFiles/TWSETests.dir
 
 # All Build rule for target.
-CMakeFiles/TWSETests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/TWSETests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/TWSETests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=11,12 "Built target TWSETests"

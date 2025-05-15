@@ -10,7 +10,6 @@
 typedef FixedArray<char, 6> Ascii6;
 
 #pragma pack(push, 1)  // 關閉自動對齊，確保 byte-level 對齊
-
 // =======================================
 // 格式六：標頭區段（總長度：9 bytes）
 // =======================================
@@ -21,7 +20,9 @@ struct TWSEFormat6Header {
     BCD1 versionCode;       // 1 byte：版本號（通常為 "09"）
     BCD4 sequenceNumber;    // 4 bytes：流水編號
 };
+#pragma pack(pop)
 
+#pragma pack(push, 1)
 // =======================================
 // 格式六：成交主體資訊（總長度：28 bytes）
 // =======================================
@@ -33,7 +34,9 @@ struct TWSEFormat6Body {
     BCD1   statusFlag;      // 1 byte：交易狀態（開盤、暫停、收盤等）
     BCD4   cumulativeVolume;// 4 bytes：累積成交量（單位：張）
 };
+#pragma pack(pop)
 
+#pragma pack(push, 1)
 // =======================================
 // 格式六：價格/張數對組（動態 N 筆）
 // =======================================
@@ -41,7 +44,9 @@ struct TWSEFormat6PriceVolume {
     BCD5 price;             // 5 bytes：價格（含兩位小數）
     BCD4 quantity;          // 4 bytes：張數
 };
+#pragma pack(pop)
 
+#pragma pack(push, 1)
 // =======================================
 // 格式六：固定封包區（ESC ~ Volume 為止，共 38 bytes）
 // - 後續動態區域為 PriceVolume + XOR + Terminal
@@ -68,7 +73,6 @@ struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
     /// 驗證固定區段大小是否正確（應為 38 bytes）
     static bool verifySize();
 };
-
 #pragma pack(pop)
 
 // ✅ 編譯期大小驗證：固定區段必須為 38 bytes

@@ -1,6 +1,7 @@
 // TWSEFormat1Parser.cpp
 #include "format1/TWSEFormat1Parser.h"
 #include <cstring>  // for std::memcpy
+#include <iostream>
 
 /// ========================================
 /// getFormatName()
@@ -24,11 +25,26 @@ std::shared_ptr<TWSEParsedResult> TWSEFormat1Parser::getParsedResult() const {
 /// - 若任一驗證失敗則回傳 false
 /// ========================================
 bool TWSEFormat1Parser::parse(const uint8_t* data, size_t length) {
-    if (length < sizeof(TWSEStockBasicInfoFormat1)) return false;
+    if (length < sizeof(TWSEStockBasicInfoFormat1)) {
+        std::cout << "❌ Format1Parser: 長度不足 (" << length
+                  << " < " << sizeof(TWSEStockBasicInfoFormat1) << ")\n";
+        return false;
+    }
 
     result = std::make_shared<TWSEParsedFormat1Result>();
     std::memcpy(&result->packet, data, sizeof(TWSEStockBasicInfoFormat1));
 
     bool escOK, termOK, xorOK;
-    return result->packet.verifyAll(escOK, termOK, xorOK);
+    bool allOK = result->packet.verifyAll(escOK, termOK, xorOK);
+
+    if (!allOK) {
+        std::cout << "❌ Format1Parser: 驗證失敗 → "
+                  << (escOK ? "" : "[起始錯] ")
+                  << (termOK ? "" : "[結尾錯] ")
+                  << (xorOK ? "" : "[XOR錯] ")
+                  << "\n";
+    }
+
+    return allOK;
 }
+

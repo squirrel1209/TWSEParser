@@ -1,6 +1,6 @@
 // TWSEParsedFormat6Result.h
 #pragma once
-#include "TWSEParsedResult.h"
+#include "base/TWSEParsedResult.h"
 #include "TWSEFormat6.h"
 #include <vector>
 

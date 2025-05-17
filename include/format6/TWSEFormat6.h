@@ -3,7 +3,6 @@
 
 #include <cstdint>
 #include "common/TBCD.h"
-#include "base/TWSEPacketBase.h"
 #include "common/FixedArray.h"
 
 /// 固定長度 ASCII 欄位型別
@@ -51,7 +50,7 @@ struct TWSEFormat6PriceVolume {
 // 格式六：固定封包區（ESC ~ Volume 為止，共 29 bytes）
 // - 後續動態區域為 PriceVolume + XOR + Terminal
 // =======================================
-struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
+struct TWSERealtimeQuoteFormat6Fixed {
     BCD1 escCode;                  // 1 byte：封包起始符（應為 0x1B）
     TWSEFormat6Header header;     // 9 bytes：封包標頭
     TWSEFormat6Body body;         // 19 bytes：封包主體資訊
@@ -59,16 +58,16 @@ struct TWSERealtimeQuoteFormat6Fixed : public TWSEPacketBase {
     // ✅ 封包驗證函式（實作請見 TWSEFormat6.cpp）
 
     /// 驗證 XOR 是否正確（從 messageLength ~ cumulativeVolume 為止）
-    bool checkXor() const override;
+    bool checkXor() const ;
 
     /// 驗證 ESC 碼是否為 0x1B（封包開頭）
-    bool verifyEsc() const override;
+    bool verifyEsc() const ;
 
     /// 驗證封包終止碼（解析 revealFlag 決定價格筆數，推導出終止位置）
-    bool verifyTerminal() const override;
+    bool verifyTerminal() const ;
 
     /// 綜合驗證封包（ESC + XOR + Terminal）
-    bool verifyAll(bool& escOK, bool& termOK, bool& xorOK) const override;
+    bool verifyAll(bool& escOK, bool& termOK, bool& xorOK) const ;
 
     /// 驗證固定區段大小是否正確（應為 29 bytes）
     static bool verifySize();

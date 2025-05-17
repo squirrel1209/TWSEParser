@@ -5,11 +5,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # =======================================
-# 🔧 Include headers
+# 🔧 Include headers（已刪除 base）
 # =======================================
 include_directories(
     include
-    include/base
     include/common
     include/format1
     include/format6
@@ -18,7 +17,7 @@ include_directories(
 )
 
 # =======================================
-# 📦 核心 Source files
+# 📦 核心 Source files（已刪除 TWSEPacketBase）
 # =======================================
 set(CORE_SOURCES
     src/main.cpp
@@ -68,8 +67,8 @@ target_sources(TWSETests
     PRIVATE
     src/format1/TWSEFormat1.cpp
     src/format1/TWSEFormat1Parser.cpp
-    src/format6/TWSEFormat6.cpp                   # ✅ 補上
-    src/format6/TWSEFormat6Parser.cpp             # ✅ 補上
+    src/format6/TWSEFormat6.cpp
+    src/format6/TWSEFormat6Parser.cpp
     src/controller/TWSEPacketParser.cpp
     src/base/TWSEParserFactory.cpp
     src/common/EncodingUtils.cpp

@@ -8,7 +8,7 @@
 
 int main() {
     // ✅ 讀取測試封包檔
-    std::ifstream file("../data/Tse.bin", std::ios::binary | std::ios::ate);
+    std::ifstream file("../data/tse_06.bin", std::ios::binary | std::ios::ate);
     if (!file) {
         std::cerr << "❌ 無法開啟檔案 data/Tse.bin\n";
         return 1;

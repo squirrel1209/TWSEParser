@@ -4,6 +4,8 @@
 #include <cstddef>
 #include <initializer_list>
 #include <stdexcept>
+#include <cstring>
+
 
 // ===============================
 // 固定長度陣列：封裝靜態大小的陣列並提供安全存取接口

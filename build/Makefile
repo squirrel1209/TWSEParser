@@ -254,6 +254,7 @@ src/base/TWSEParserFactory.obj: src/base/TWSEParserFactory.cpp.obj
 # target to build an object file
 src/base/TWSEParserFactory.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/base/TWSEParserFactory.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj
 .PHONY : src/base/TWSEParserFactory.cpp.obj
 
 src/base/TWSEParserFactory.i: src/base/TWSEParserFactory.cpp.i
@@ -262,6 +263,7 @@ src/base/TWSEParserFactory.i: src/base/TWSEParserFactory.cpp.i
 # target to preprocess a source file
 src/base/TWSEParserFactory.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/base/TWSEParserFactory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.i
 .PHONY : src/base/TWSEParserFactory.cpp.i
 
 src/base/TWSEParserFactory.s: src/base/TWSEParserFactory.cpp.s
@@ -270,6 +272,7 @@ src/base/TWSEParserFactory.s: src/base/TWSEParserFactory.cpp.s
 # target to generate assembly for a file
 src/base/TWSEParserFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/base/TWSEParserFactory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.s
 .PHONY : src/base/TWSEParserFactory.cpp.s
 
 src/common/EncodingUtils.obj: src/common/EncodingUtils.cpp.obj
@@ -278,6 +281,7 @@ src/common/EncodingUtils.obj: src/common/EncodingUtils.cpp.obj
 # target to build an object file
 src/common/EncodingUtils.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/common/EncodingUtils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj
 .PHONY : src/common/EncodingUtils.cpp.obj
 
 src/common/EncodingUtils.i: src/common/EncodingUtils.cpp.i
@@ -286,6 +290,7 @@ src/common/EncodingUtils.i: src/common/EncodingUtils.cpp.i
 # target to preprocess a source file
 src/common/EncodingUtils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/common/EncodingUtils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.i
 .PHONY : src/common/EncodingUtils.cpp.i
 
 src/common/EncodingUtils.s: src/common/EncodingUtils.cpp.s
@@ -294,6 +299,7 @@ src/common/EncodingUtils.s: src/common/EncodingUtils.cpp.s
 # target to generate assembly for a file
 src/common/EncodingUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/common/EncodingUtils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.s
 .PHONY : src/common/EncodingUtils.cpp.s
 
 src/controller/TWSEApp.obj: src/controller/TWSEApp.cpp.obj
@@ -326,6 +332,7 @@ src/controller/TWSEPacketParser.obj: src/controller/TWSEPacketParser.cpp.obj
 # target to build an object file
 src/controller/TWSEPacketParser.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/controller/TWSEPacketParser.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj
 .PHONY : src/controller/TWSEPacketParser.cpp.obj
 
 src/controller/TWSEPacketParser.i: src/controller/TWSEPacketParser.cpp.i
@@ -334,6 +341,7 @@ src/controller/TWSEPacketParser.i: src/controller/TWSEPacketParser.cpp.i
 # target to preprocess a source file
 src/controller/TWSEPacketParser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/controller/TWSEPacketParser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.i
 .PHONY : src/controller/TWSEPacketParser.cpp.i
 
 src/controller/TWSEPacketParser.s: src/controller/TWSEPacketParser.cpp.s
@@ -342,6 +350,7 @@ src/controller/TWSEPacketParser.s: src/controller/TWSEPacketParser.cpp.s
 # target to generate assembly for a file
 src/controller/TWSEPacketParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/controller/TWSEPacketParser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.s
 .PHONY : src/controller/TWSEPacketParser.cpp.s
 
 src/format1/TWSEFormat1.obj: src/format1/TWSEFormat1.cpp.obj
@@ -404,6 +413,7 @@ src/format6/TWSEFormat6.obj: src/format6/TWSEFormat6.cpp.obj
 # target to build an object file
 src/format6/TWSEFormat6.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj
 .PHONY : src/format6/TWSEFormat6.cpp.obj
 
 src/format6/TWSEFormat6.i: src/format6/TWSEFormat6.cpp.i
@@ -412,6 +422,7 @@ src/format6/TWSEFormat6.i: src/format6/TWSEFormat6.cpp.i
 # target to preprocess a source file
 src/format6/TWSEFormat6.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.i
 .PHONY : src/format6/TWSEFormat6.cpp.i
 
 src/format6/TWSEFormat6.s: src/format6/TWSEFormat6.cpp.s
@@ -420,6 +431,7 @@ src/format6/TWSEFormat6.s: src/format6/TWSEFormat6.cpp.s
 # target to generate assembly for a file
 src/format6/TWSEFormat6.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.s
 .PHONY : src/format6/TWSEFormat6.cpp.s
 
 src/format6/TWSEFormat6Parser.obj: src/format6/TWSEFormat6Parser.cpp.obj
@@ -428,6 +440,7 @@ src/format6/TWSEFormat6Parser.obj: src/format6/TWSEFormat6Parser.cpp.obj
 # target to build an object file
 src/format6/TWSEFormat6Parser.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj
 .PHONY : src/format6/TWSEFormat6Parser.cpp.obj
 
 src/format6/TWSEFormat6Parser.i: src/format6/TWSEFormat6Parser.cpp.i
@@ -436,6 +449,7 @@ src/format6/TWSEFormat6Parser.i: src/format6/TWSEFormat6Parser.cpp.i
 # target to preprocess a source file
 src/format6/TWSEFormat6Parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.i
 .PHONY : src/format6/TWSEFormat6Parser.cpp.i
 
 src/format6/TWSEFormat6Parser.s: src/format6/TWSEFormat6Parser.cpp.s
@@ -444,6 +458,7 @@ src/format6/TWSEFormat6Parser.s: src/format6/TWSEFormat6Parser.cpp.s
 # target to generate assembly for a file
 src/format6/TWSEFormat6Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSEParser.dir\build.make CMakeFiles/TWSEParser.dir/src/format6/TWSEFormat6Parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TWSETests.dir\build.make CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.s
 .PHONY : src/format6/TWSEFormat6Parser.cpp.s
 
 src/main.obj: src/main.cpp.obj

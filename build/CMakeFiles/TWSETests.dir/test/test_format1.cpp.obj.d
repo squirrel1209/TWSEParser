@@ -243,15 +243,25 @@ CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj: \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/format1/TWSEFormat1.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/TBCD.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.tpp \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/base/TWSEPacketBase.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/format1/TWSEFormat1Parser.h \
- C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/base/TWSEFormatParser.h \
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/controller/TWSEPacketParser.h \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/base/TWSEParsedResult.h \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/result/TWSEParsedFormat1Result.h \
  C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/format1/TWSEFormat1.h \
- d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\cstring
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/TBCD.h \
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\cstring \
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.tpp \
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/base/TWSEPacketBase.h \
+ C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/include/common/FixedArray.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\fstream \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\basic_file.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++io.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\bits\fstream.tcc \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\filesystem \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\bits\fs_fwd.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\bits\fs_path.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\codecvt \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\algorithm \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\pstl\glue_algorithm_defs.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\bits\fs_dir.h \
+ d:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\include\c++\11.2.0\bits\fs_ops.h

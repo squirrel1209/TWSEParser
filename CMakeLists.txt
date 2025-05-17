@@ -18,9 +18,9 @@ include_directories(
 )
 
 # =======================================
-# 📦 Source files
+# 📦 核心 Source files
 # =======================================
-file(GLOB_RECURSE SOURCES
+set(CORE_SOURCES
     src/main.cpp
     src/controller/TWSEApp.cpp
     src/controller/TWSEPacketParser.cpp
@@ -36,10 +36,10 @@ file(GLOB_RECURSE SOURCES
 # =======================================
 # 🎯 Main Executable
 # =======================================
-add_executable(TWSEParser ${SOURCES})
+add_executable(TWSEParser ${CORE_SOURCES})
 
 # =======================================
-# 🧪 GoogleTest (built-in FetchContent)
+# 🧪 GoogleTest (內建 FetchContent)
 # =======================================
 include(FetchContent)
 FetchContent_Declare(
@@ -52,29 +52,36 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # =======================================
-# 🧪 Unit Test Executable
+# 🧪 Test Source files
 # =======================================
-file(GLOB_RECURSE TEST_SOURCES
+set(TEST_SOURCES
     test/test_format1.cpp
-    # 你也可以加上其他：
     # test/test_format6.cpp
     # test/test_parser_factory.cpp
 )
 
+# ✅ 單元測試執行檔
 add_executable(TWSETests ${TEST_SOURCES})
 
-# ✅ 加入被測試的核心元件（Format1）
+# ✅ 測試需要的核心元件
 target_sources(TWSETests
     PRIVATE
     src/format1/TWSEFormat1.cpp
     src/format1/TWSEFormat1Parser.cpp
+    src/format6/TWSEFormat6.cpp                   # ✅ 補上
+    src/format6/TWSEFormat6Parser.cpp             # ✅ 補上
+    src/controller/TWSEPacketParser.cpp
+    src/base/TWSEParserFactory.cpp
+    src/common/EncodingUtils.cpp
 )
 
+# ✅ 連結 GoogleTest
 target_link_libraries(TWSETests gtest gtest_main)
 
+# ✅ 測試註冊
 add_test(NAME AllTests COMMAND TWSETests)
 
 # =======================================
-# 🪪 結尾提示
+# ✅ 結尾提示
 # =======================================
 message(STATUS "🛠  TWSEPacketParser Project Ready!")

@@ -116,11 +116,91 @@ CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.s"
 	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format1\TWSEFormat1Parser.cpp -o CMakeFiles\TWSETests.dir\src\format1\TWSEFormat1Parser.cpp.s
 
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj: CMakeFiles/TWSETests.dir/flags.make
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj: CMakeFiles/TWSETests.dir/includes_CXX.rsp
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj: C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format6/TWSEFormat6.cpp
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj: CMakeFiles/TWSETests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj -MF CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6.cpp.obj.d -o CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6.cpp.obj -c C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6.cpp
+
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.i"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6.cpp > CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6.cpp.i
+
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.s"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6.cpp -o CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6.cpp.s
+
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj: CMakeFiles/TWSETests.dir/flags.make
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj: CMakeFiles/TWSETests.dir/includes_CXX.rsp
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj: C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/format6/TWSEFormat6Parser.cpp
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj: CMakeFiles/TWSETests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj -MF CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6Parser.cpp.obj.d -o CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6Parser.cpp.obj -c C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6Parser.cpp
+
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.i"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6Parser.cpp > CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6Parser.cpp.i
+
+CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.s"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\format6\TWSEFormat6Parser.cpp -o CMakeFiles\TWSETests.dir\src\format6\TWSEFormat6Parser.cpp.s
+
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj: CMakeFiles/TWSETests.dir/flags.make
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj: CMakeFiles/TWSETests.dir/includes_CXX.rsp
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj: C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/controller/TWSEPacketParser.cpp
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj: CMakeFiles/TWSETests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj -MF CMakeFiles\TWSETests.dir\src\controller\TWSEPacketParser.cpp.obj.d -o CMakeFiles\TWSETests.dir\src\controller\TWSEPacketParser.cpp.obj -c C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\controller\TWSEPacketParser.cpp
+
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.i"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\controller\TWSEPacketParser.cpp > CMakeFiles\TWSETests.dir\src\controller\TWSEPacketParser.cpp.i
+
+CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.s"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\controller\TWSEPacketParser.cpp -o CMakeFiles\TWSETests.dir\src\controller\TWSEPacketParser.cpp.s
+
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj: CMakeFiles/TWSETests.dir/flags.make
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj: CMakeFiles/TWSETests.dir/includes_CXX.rsp
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj: C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/base/TWSEParserFactory.cpp
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj: CMakeFiles/TWSETests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj -MF CMakeFiles\TWSETests.dir\src\base\TWSEParserFactory.cpp.obj.d -o CMakeFiles\TWSETests.dir\src\base\TWSEParserFactory.cpp.obj -c C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\base\TWSEParserFactory.cpp
+
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.i"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\base\TWSEParserFactory.cpp > CMakeFiles\TWSETests.dir\src\base\TWSEParserFactory.cpp.i
+
+CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.s"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\base\TWSEParserFactory.cpp -o CMakeFiles\TWSETests.dir\src\base\TWSEParserFactory.cpp.s
+
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj: CMakeFiles/TWSETests.dir/flags.make
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj: CMakeFiles/TWSETests.dir/includes_CXX.rsp
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj: C:/Users/squirrel/Desktop/Kway/TWSEPacketParserProject/TWSEParser_Full_20250514/src/common/EncodingUtils.cpp
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj: CMakeFiles/TWSETests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj -MF CMakeFiles\TWSETests.dir\src\common\EncodingUtils.cpp.obj.d -o CMakeFiles\TWSETests.dir\src\common\EncodingUtils.cpp.obj -c C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\common\EncodingUtils.cpp
+
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.i"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\common\EncodingUtils.cpp > CMakeFiles\TWSETests.dir\src\common\EncodingUtils.cpp.i
+
+CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.s"
+	D:\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r5\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\src\common\EncodingUtils.cpp -o CMakeFiles\TWSETests.dir\src\common\EncodingUtils.cpp.s
+
 # Object files for target TWSETests
 TWSETests_OBJECTS = \
 "CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj" \
 "CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj" \
-"CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj"
+"CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj" \
+"CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj" \
+"CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj" \
+"CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj" \
+"CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj" \
+"CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj"
 
 # External object files for target TWSETests
 TWSETests_EXTERNAL_OBJECTS =
@@ -128,6 +208,11 @@ TWSETests_EXTERNAL_OBJECTS =
 TWSETests.exe: CMakeFiles/TWSETests.dir/test/test_format1.cpp.obj
 TWSETests.exe: CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1.cpp.obj
 TWSETests.exe: CMakeFiles/TWSETests.dir/src/format1/TWSEFormat1Parser.cpp.obj
+TWSETests.exe: CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6.cpp.obj
+TWSETests.exe: CMakeFiles/TWSETests.dir/src/format6/TWSEFormat6Parser.cpp.obj
+TWSETests.exe: CMakeFiles/TWSETests.dir/src/controller/TWSEPacketParser.cpp.obj
+TWSETests.exe: CMakeFiles/TWSETests.dir/src/base/TWSEParserFactory.cpp.obj
+TWSETests.exe: CMakeFiles/TWSETests.dir/src/common/EncodingUtils.cpp.obj
 TWSETests.exe: CMakeFiles/TWSETests.dir/build.make
 TWSETests.exe: lib/libgtest.a
 TWSETests.exe: lib/libgtest_main.a
@@ -135,7 +220,7 @@ TWSETests.exe: lib/libgtest.a
 TWSETests.exe: CMakeFiles/TWSETests.dir/linkLibs.rsp
 TWSETests.exe: CMakeFiles/TWSETests.dir/objects1.rsp
 TWSETests.exe: CMakeFiles/TWSETests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TWSETests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\squirrel\Desktop\Kway\TWSEPacketParserProject\TWSEParser_Full_20250514\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable TWSETests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TWSETests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -51,5 +51,11 @@ bool TWSEFormat6Parser::parse(const uint8_t* data, size_t length) {
     for (int i = 0; i < bid; ++i) result->bidPrices.push_back(prices[idx++]);
     for (int i = 0; i < ask; ++i) result->askPrices.push_back(prices[idx++]);
 
+
+    // ✅ 解析 XOR 與 Terminal（最後 3 bytes）
+    size_t xorPos = offset + total * sizeof(TWSEFormat6PriceVolume);
+    result->xorCheck.assign(&data[xorPos]);          // ✅ BCD1
+    result->terminalCode.assign(&data[xorPos + 1]);  // ✅ BCD2
+
     return true;
 }

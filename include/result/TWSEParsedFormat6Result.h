@@ -13,4 +13,6 @@ public:
     std::vector<TWSEFormat6PriceVolume> dealPrices;
     std::vector<TWSEFormat6PriceVolume> bidPrices;
     std::vector<TWSEFormat6PriceVolume> askPrices;
+    BCD1 xorCheck;                        // XOR 驗證位元
+    BCD2 terminalCode;                    // 結尾（0x0D 0x0A）
 };

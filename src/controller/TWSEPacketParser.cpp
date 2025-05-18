@@ -32,15 +32,15 @@ void TWSEPacketParser::parseAll() {
         // Step 3: 格式碼 FormatCode
         uint8_t formatCode = rawData[offset + 4];
 
-        std::cout << "\n🟡 嘗試解析封包 #" << index
-                  << " | Offset: " << offset
-                  << " | Length: " << len
-                  << " | FormatCode: 0x" << std::hex << std::setw(2)
-                  << std::setfill('0') << static_cast<int>(formatCode) << std::dec << "\n";
+        //std::cout << "\n🟡 嘗試解析封包 #" << index
+        //          << " | Offset: " << offset
+        //          << " | Length: " << len
+        //          << " | FormatCode: 0x" << std::hex << std::setw(2)
+        //          << std::setfill('0') << static_cast<int>(formatCode) << std::dec << "\n";
 
         // Step 4: 結尾符檢查
         if (rawData[offset + len - 2] != 0x0D || rawData[offset + len - 1] != 0x0A) {
-            std::cout << "❌ 封包結尾不合法（預期 0x0D 0x0A）\n";
+            //std::cout << "❌ 封包結尾不合法（預期 0x0D 0x0A）\n";
             ++offset;
             continue;
         }
@@ -48,7 +48,7 @@ void TWSEPacketParser::parseAll() {
         // Step 5: 建立解析器
         auto parser = TWSEParserFactory::createParser(formatCode);
         if (!parser) {
-            std::cout << "❌ 無法建立對應 Parser（格式不支援或長度錯）\n";
+            //std::cout << "❌ 無法建立對應 Parser（格式不支援或長度錯）\n";
             ++offset;
             continue;
         }
@@ -56,22 +56,22 @@ void TWSEPacketParser::parseAll() {
         // Step 6: 執行解析
         if (parser->parse(rawData.data() + offset, len)) {
             results.push_back(parser->getParsedResult());
-            std::cout << "✅ Format " << parser->getFormatName()
-                      << " 解析成功, Offset: " << offset
-                      << ", 長度: " << len << "\n";
+            //std::cout << "✅ Format " << parser->getFormatName()
+            //          << " 解析成功, Offset: " << offset
+            //          << ", 長度: " << len << "\n";
             ++index;
             offset += len;
         } 
         
         else {
-            std::cout << "❌ 解析失敗（Parser 拒絕）\n";
+            //std::cout << "❌ 解析失敗（Parser 拒絕）\n";
 
             // 額外印出封包開頭 bytes 方便 debug
-            std::cout << "🔍 封包前 8 bytes: ";
-            for (int i = 0; i < 8 && offset + i < rawData.size(); ++i)
-                std::cout << std::hex << std::setw(2) << std::setfill('0')
-                          << static_cast<int>(rawData[offset + i]) << " ";
-            std::cout << std::dec << "\n";
+            //std::cout << "🔍 封包前 8 bytes: ";
+            //for (int i = 0; i < 8 && offset + i < rawData.size(); ++i)
+            //    std::cout << std::hex << std::setw(2) << std::setfill('0')
+            //              << static_cast<int>(rawData[offset + i]) << " ";
+            //std::cout << std::dec << "\n";
 
             ++offset; // 小步前進，避免錯位連錯
         }

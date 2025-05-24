@@ -58,8 +58,8 @@ int main() {
     if (!ticks.empty()) {
         std::cout << "\n📊 成交歷程 (Format6)，共 " << ticks.size() << " 筆\n";
         const auto& latest = ticks.back();
-        std::cout << "最新成交：價格 " << latest->price.toDouble(2)
-                  << "，數量 " << latest->quantity.toInt() << "\n";
+        std::cout << "，價格 " << latest->price.toDouble(2)
+          << "，數量 " << latest->quantity.toInt() << "\n";
     } else {
         std::cout << "❌ 找不到成交資料 (Format6)\n";
     }

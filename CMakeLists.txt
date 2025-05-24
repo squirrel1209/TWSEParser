@@ -54,7 +54,7 @@ enable_testing()
 # 🧪 Test Source files
 # =======================================
 set(TEST_SOURCES
-    test/test_format1.cpp
+    test/test.cpp
     # test/test_format6.cpp
     # test/test_parser_factory.cpp
 )
